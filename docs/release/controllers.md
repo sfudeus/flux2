@@ -24,7 +24,7 @@ An alpha version API e.g. `v1alpha1` is considered experiment and should be used
 test environments only.
 
 The schema of objects may change in incompatible ways in a later controller release.
-The custom resources may require editing and re-creating after a CRD update.
+The Flux Custom Resources may require editing and re-creating after a CRD update.
 
 An alpha version API becomes deprecated once a subsequent alpha or beta API version is released.
 A deprecated alpha version is subject to removal after a three months period.
@@ -39,7 +39,7 @@ valuable during early stages of development.
 A beta version API e.g. `v2beta1` is considered well tested and safe to be used.
 
 The schema of objects may change in incompatible ways in a subsequent beta or stable API version.
-The custom resources may require editing after a CRD update for which migration instructions will be
+The Flux Custom Resources may require editing after a CRD update for which migration instructions will be
 provided as part of the controller changelog.
 
 A beta version API becomes deprecated once a subsequent beta or stable API version is released. 
@@ -49,7 +49,7 @@ A deprecated beta version is subject to removal after a six months period.
 
 A stable version API e.g. `v2` is considered feature complete.
 
-Any changes to the object schema do not require editing or re-creating of custom resources.
+Any changes to the object schema do not require editing or re-creating of Flux Custom Resources.
 Schema fields can't be removed, only new fields can be added with a default value that
 doesn't affect the controller's current behaviour.
 
